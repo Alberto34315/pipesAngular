@@ -7,7 +7,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class MenuComponent implements OnInit {
   items: MenuItem[] = [];
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this.items = [
@@ -35,6 +35,7 @@ export class MenuComponent implements OnInit {
       {
         label: 'Pipes personalizados',
         icon: 'pi pi-cog',
+        routerLink: 'ordenar'
       },
     ];
   }
